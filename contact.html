@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img src="asset/img/jarditou_logo.jpg">
+        <img src="asset/img/jarditou_logo.jpg" alt="logo_jardinou.jpg" width="400px" height="150px">
     </header>
     
     <p></p>
@@ -17,45 +17,45 @@
     <nav class="menu">
         <ul>
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="copie tableau.html">Tableau</a></li>
+            <li><a href="copie_tableau.html">Tableau</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <img src="asset/img/promotion.jpg">
+    <img src="asset/img/promotion.jpg" alt="promotion.jpg">
 
 
-    <article>
-        <section>
+    
+    <section>
           <h2> <p id="contact">Contact </p> </h2><br>
-        </section>
+        
             ___________________________________________________________________________________________________________________________________________________________ <p></p>
-           
+            <article>
             * Ces zones sont obligatoires <p></p>
             <form action="http://bienvu.net/script.php" method="get"> 
 
 
                 <fieldset>
                     <legend>Coordonnées</legend>
-                         <label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom"><br>
-                            <label for="prenom">Votre prénom* :</label><input type="text" name="prenom" id="prenom">
+                         <label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom" required title="case obligatoire" ><br>
+                            <label for="prenom">Votre prénom* :</label><input type="text" name="prenom" id="prenom" required title="case obligatoire">
                             <p></p>
-                            <label for="sexe">Sexe* :</label>        <input type="radio" name="sexe" value="feminin"> Féminin
+                            <label for="sexe">Sexe* :</label>        <input type="radio" name="sexe" value="feminin" required title="case obligatoire"> Féminin
                                                                      <input type="radio" name="sexe" value="masculin"> Masculin 
                             <p></p>                                          
                           
-                            <label for="ddn">Date de naissance* :</label><input type="date" name="ddn" id="ddn"><br>
-                            <label for="cp">Code postal* :</label><input type="text" name="cp" id="cp"><br>
+                            <label for="ddn">Date de naissance* :</label><input type="date" name="ddn" id="ddn" required title="case obligatoire" ><br>
+                            <label for="cp">Code postal* :</label><input type="text" name="cp" id="cp" required title="case obligatoire"><br>
                             <label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse"><br>
                             <label for="ville">Ville :</label><input type="text" name="ville" id="ville"><br>
-                            <label for="?">Email* :</label><input type="email" name="email" placeholder="dave.loper@afpa.fr"><br>
+                            <label for="?">Email* :</label><input type="email" name="email" placeholder="dave.loper@afpa.fr" required title="case obligatoire" ><br>
                 </fieldset>
                 
             
                 <fieldset>
                     <legend>Votre demande</legend>
                        <label for="sujet">Sujet* :</label>
-                       <select id="sujet">
+                       <select id="sujet" required title="case obligatoire">
                             <option value="" selected>Veuillez séléctionner un sujet</option>
                             <option value="wtf">mes commandes</option>
                             <option value="wtf">wtf</option>
@@ -65,9 +65,11 @@
             
                        <p></p>
             
-                       <label for="votrequestion">Votre question* :</label><textarea name="commentaire" rows="2" cols="20"></textarea>
+                       <label for="votrequestion">Votre question* :</label><textarea name="commentaire" rows="2" cols="20" required title="case obligatoire"></textarea>
                             
                  </fieldset>
+             </article>
+        
             
                  <p></p>
             
@@ -80,8 +82,8 @@
             
             
              </form>
-                
-        _______________________________________________________________________________________________________________________________________________________________
+    </section>
+        ___________________________________________________________________________________________________________________________________________________________
 
     <footer>
 

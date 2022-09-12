@@ -54,6 +54,10 @@ aside {
     width: 25%;
            }
 
+section {
+    display: block;
+    width: 75%;
+}           
 
 
 
